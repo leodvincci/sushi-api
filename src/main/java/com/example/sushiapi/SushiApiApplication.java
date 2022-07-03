@@ -14,16 +14,15 @@ public class SushiApiApplication {
         SpringApplication.run(SushiApiApplication.class, args);
     }
 
-//    @Bean
-//    CommandLineRunner runner(SushiRollRepo sushiRollRepo){
-//        return args -> {
-//
-//            SushiRoll sushiRoll = new SushiRoll(2,"fire roll","it's really good");
-//
-//            sushiRollRepo.insert(sushiRoll);
-//        };
-//
-//    }
-//
+    @Bean
+    CommandLineRunner runner(SushiRollRepo sushiRollRepo){
+        return args -> {
+
+            SushiRoll sushiRoll = new SushiRoll(42,"fire roll","it's really good");
+
+            sushiRollRepo.insert(sushiRoll);
+        };
+
+    }
 
 }
