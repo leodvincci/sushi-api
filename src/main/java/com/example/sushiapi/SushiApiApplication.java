@@ -18,7 +18,7 @@ public class SushiApiApplication {
     CommandLineRunner runner(SushiRollRepo sushiRollRepo){
         return args -> {
 
-            SushiRoll sushiRoll = new SushiRoll(24,"fire roll","it's really good");
+            SushiRoll sushiRoll = new SushiRoll(14," roll","it's really good");
 
             sushiRollRepo.insert(sushiRoll);
         };

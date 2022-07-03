@@ -19,10 +19,16 @@ public class SushiRollController {
 
     private final SushiRollService sushiRollService;
 
-    @GetMapping
+    @GetMapping()
     public List<SushiRoll> fetchAllStudents(){
         return sushiRollService.getAllSushirolls();
     }
 
+    @GetMapping("/hello")
+    public String sayHello(){
+        return "Hello";
+    }
 
 }
+
+
