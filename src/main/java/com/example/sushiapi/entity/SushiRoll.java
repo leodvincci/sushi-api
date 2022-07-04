@@ -14,10 +14,14 @@ public class SushiRoll {
     private String name;
     private String description;
 
-    public SushiRoll(Integer id, String name, String description) {
+    private String imgLink;
+
+    public SushiRoll(Integer id, String name, String description,
+    String imageLink) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.imgLink = imageLink;
     }
 
     public SushiRoll() {
@@ -34,6 +38,14 @@ public class SushiRoll {
 
     public String getName() {
         return name;
+    }
+
+    public String getImgLink() {
+        return imgLink;
+    }
+
+    public void setImgLink(String imgLink) {
+        this.imgLink = imgLink;
     }
 
     public void setName(String name) {
